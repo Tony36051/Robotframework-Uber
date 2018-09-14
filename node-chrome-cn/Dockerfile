@@ -1,0 +1,10 @@
+FROM selenium/node-chrome
+
+USER root
+
+RUN apt-get update -qqy \
+    && apt-get -qqy install ttf-wqy-microhei ttf-wqy-zenhei \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
+
+USER seluser
