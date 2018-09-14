@@ -1,5 +1,5 @@
 FROM selenium/node-chrome
-
+MAINTAINER Wu Jiansong <360517703@163.com>
 USER root
 
 RUN apt-get update -qqy \
